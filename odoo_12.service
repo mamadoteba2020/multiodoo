@@ -1,0 +1,11 @@
+[Unit] 
+Description=Odoo 
+Documentation=http://www.odoo.com
+ 
+[Service] 
+Type=simple 
+User=mamado
+ExecStart=/opt/odoo/odoo-12.0/odoo-bin -c /etc/odoo_12.conf 
+ 
+[Install] 
+WantedBy=multi-user.target 
